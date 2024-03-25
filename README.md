@@ -40,10 +40,11 @@ Bootloader и python скрипт для загрузки прошивки на 
 #### Пример
 Для первой прошивки (после установки bootloader):
 ```
-python main.py -f firmware.hex
+python upload_firmware.py -e
+python upload_firmware.py -f firmware.hex
 ```
 
-Для выполнения полного обновления:
+Для выполнения последующих обновлений:
 ```
-python main.py -u -f firmware.hex
+python upload_firmware.py -u -f firmware.hex
 ```
